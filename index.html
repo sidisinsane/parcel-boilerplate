@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parcel Boilerplate</title>
+
+  <link rel="stylesheet" href="styles/app.scss">
+</head>
+<body>
+  <div class="container">
+    <!--article START-->
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+      <!--for google only START-->
+      <link itemprop="mainEntityOfPage" href="https://some-url.com/">
+      <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+          <link itemprop="url" href="/assets/images/logo.png">
+          <meta itemprop="width" content="200">
+          <meta itemprop="height" content="200">
+        </span>
+        <meta itemprop="name" content="some-url.com">
+      </span>
+      <!--for google only END-->
+
+      <!--article header START-->
+      <header class="article__header">
+        <a itemprop="articleSection" class="article__section" href="#">Random</a>
+        <h1 itemprop="headline" class="article__headline">
+          You're a slacker. You wanna be a slacker for the rest of your life?
+        </h1>
+        <p class="article__summary">
+          Please excuse the crudity of this model, I didn't have time to build it to scale or to paint it.
+        </p>
+        <figure itemprop="author" itemscope itemtype="http://schema.org/Person" class="article__author">
+          <a itemprop="url" href="https://www.thispersondoesnotexist.com/" title="">
+            <img itemprop="image" alt="Jane Doe" title="Jane Doe" src="/assets/images/portraits/jane-doe.jpg">
+          </a>
+          <figcaption>
+            <p>By <a itemprop="url" href="https://www.thispersondoesnotexist.com/" title=""><span itemprop="name">Jane Doe</span></a></p>
+            <p itemprop="jobTitle">Editor 'n' Thief</p>
+          </figcaption>
+        </figure>
+        <time itemprop="datePublished" datetime="2020-03-29T12:00:00+01:00">March 29, 2020</time>
+        <meta itemprop="dateModified" content="2020-03-30T06:00:00+01:00">
+      </header>
+      <!--article header END-->
+      <!--article visual START-->
+      <div class="article__visual">
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject" class="article__figure">
+          <picture>
+            <source srcset="/assets/images/articles/1080x608.jpg" media="(orientation: landscape) and (min-device-pixel-ratio: 1)">
+            <source srcset="/assets/images/articles/2160x1216.jpg" media="(orientation: landscape) and (min-device-pixel-ratio: 2)">
+            <source srcset="/assets/images/articles/1080x1350.jpg" media="(orientation: portrait) and (min-device-pixel-ratio: 1)">
+            <source srcset="/assets/images/articles/2160x2700.jpg" media="(orientation: portrait) and (min-device-pixel-ratio: 2)">
+            <img src="/assets/images/articles/1080x608.jpg" alt="">
+          </picture>
+          <link itemprop="url" href="/assets/images/articles/2160x2700.jpg">
+          <figcaption itemprop="caption">
+            <span itemprop="description">Tara, Mokra Gora, Serbia</span>
+            <span class="copyright-claim">
+              &copy;Photo by <span itemprop="copyrightHolder">Filip Zrnzević</span> on Unsplash
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+      <!--article visual END-->
+      <!--article body START-->
+      <div itemprop="articleBody" class="article__body">
+        <p>Marty, are you alright? Oh, you mean how you're supposed to act on a first date. What, I don't get what happened. Oh, yeah, yeah. I know what you're gonna say, son, and you're right, you're right, But Biff just happens to be my supervisor, and I'm afraid I'm not very good at confrontations.</p>
+
+        <p>Last night, Darth Vader came down from planet Vulcan. And he told me that if I didn't take Lorraine, that he'd melt my brain. I got enough practical jokes for one evening. Good night, future boy. What? He's a very strange young man. Hey, don't I know you from somewhere?</p>
+
+        <p>Y'know this time it wasn't my fault. The Doc set all of his clocks twenty-five minutes slow. Science Fiction Theater. Where were we. They're late. My experiment worked. They're all exactly twenty-five minutes slow. Yeah, it's 8:00.</p>
+
+        <p>Yeah, exactly. Listen, woh. Hello, uh excuse me. Sorry about your barn. Well, I figured, what the hell. Yeah, gimme a Tab. When could weathermen predict the weather, let alone the future.</p>
+
+        <p>Right, I got it. Wrecked? He's alright. No. Uh, plutonium, wait a minute, are you telling me that this sucker's nuclear?</p>
+
+        <p>Ho, you mean you're gonna touch her on her- Doc, she's beautiful. She's crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you're my only hope. I swiped it from the old lady's liquor cabinet. Where? My god, do you know what this means? It means that this damn thing doesn't work at all.</p>
+
+        <p>you guys look great. Mom, you look so thin. Wow, you must be rich. Listen, Doc, you know there's something I haven't told you about the night we made that tape. Jennifer. I'm gonna ram him.</p>
+
+        <p>Your not gonna be picking a fight, Dad, dad dad daddy-o. You're coming to a rescue, right? Okay, let's go over the plan again. 8:55, where are you gonna be. Lorraine. I'd like you to meet my good friend George McFly. Hey, hey, Doc, where are you? Why do you keep following me around?</p>
+
+        <p>No no no this sucker's electrical, but I need a nuclear reaction to generate the one point twenty-one gigawatts of electricity- I think we need a rematch. How about a ride, Mister? Oh. Uncle Jailbird Joey?</p>
+
+        <p>Whoa, wait a minute, Doc, are you telling me that my mother has got the hots for me? Does your mom know about tomorrow night? Marty. Marty. Marty. He's absolutely right, Marty. the last thing you need is headaches. Shape up, man. You're a slacker. You wanna be a slacker for the rest of your life?</p>
+
+        <p>I haven't He's alright. Hey, hey, Doc, where are you? No, bastards. Ah well, sort of.</p>
+
+        <p>What's that thing he's on? Einstein, hey Einstein, where's the Doc, boy, huh? Doc Oh, I've been so worried about you ever since you ran off the other night. Are you okay? I'm sorry I have to go. Isn't he a dream boat? Shape up, man. You're a slacker. You wanna be a slacker for the rest of your life? Thank god I still got my hair. What on Earth is that thing I'm wearing?</p>
+
+        <p>Well, they're your parents, you must know them. What are their common interests, what do they like to do together? Let's get him. Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Aw yeah, everything is great. Will you take care of that?</p>
+
+        <p>Well, safe and sound, now, n good old 1955. What do you mean you've seen this, it's brand new. That's for messing up my hair. Okay. Quiet.</p>
+
+        <p>Doc, look, all we need is a little plutonium. What, what, ma? Nothing's coming to my mind. Let me show you my plan for sending you home. Please excuse the crudity of this model, I didn't have time to build it to scale or to paint it. Sit here, Marty.</p>
+
+        <p>Oh. Um, well it's a delorean, right? Oh hey, Biff, hey, guys, how are you doing? Right. So what's it to you, butthead. You know you've been looking for a, since you're new here, I'm gonna cut you a break, today. So why don't you make like a tree, and get out of here.</p>
+      </div>
+      <!--article body END-->
+    </article>
+    <!--article END-->
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

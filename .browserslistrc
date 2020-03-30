@@ -1,0 +1,6 @@
+# https://github.com/browserslist/browserslist#readme
+# npx browserslist
+last 2 major versions
+> 1%
+ie >= 11
+not ie 10

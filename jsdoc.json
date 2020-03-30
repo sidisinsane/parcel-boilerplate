@@ -1,0 +1,39 @@
+{
+  "tags": {
+    "allowUnknownTags": false,
+    "dictionaries": ["jsdoc"]
+  },
+  "source": {
+    "include": [
+      "scripts",
+      "tests",
+      "package.json",
+      "README.md"
+    ],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|jsdoc)"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "referenceTitle": "Parcel Boilerplate",
+    "disableSort": false,
+    "collapse": true,
+    "resources": {
+      "jquery@3.4.1": "https://github.com/jquery/jquery/blob/3.4.1/README.md"
+    },
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "useLongnameInNav": true,
+    "showInheritedInNav": true
+  },
+  "opts": {
+    "destination": "./docs/jsdoc/",
+    "encoding": "utf8",
+    "private": true,
+    "recurse": true,
+    "verbose": true,
+    "template": "./node_modules/braintree-jsdoc-template"
+  }
+}

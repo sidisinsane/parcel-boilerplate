@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parcel Boilerplate Build Test</title>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      box-sizing: inherit;
+      font-size: 16px;
+    }
+
+    [data-build-state]::after {
+      content: attr(data-build-state);
+    }
+
+    [data-build-state] {
+      background-color: #dc0000;
+      color: #ffffff;
+    }
+
+    [data-build-state="passing"] {
+      background-color: #74ae55;
+    }
+
+    .build-states {
+      font-family: 'Consolas', 'Monaco', 'Andale Mono', monospace;
+      font-size: .75rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 0;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .build-state {
+      flex: 0 1 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      line-height: 1;
+      padding: 0;
+      margin: 0 1em 0 0;
+    }
+
+    .build-state:last-child {
+      margin-right: 0;
+    }
+
+    .build-state__label,
+    .build-state__value {
+      display: block;
+      padding: .25em .5em;
+      margin: 0;
+    }
+
+    .build-state__label {
+      background-color: #3b4042;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      cursor: help;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./styles/test.build.scss">
+</head>
+<body>
+  <div class="build-states">
+    <span id="build-state-css" class="build-state">
+      <abbr class="build-state__label" title="CSS build state">CSS</abbr>
+      <span class="build-state__value" data-build-state="failing"></span>
+    </span>
+
+    <span id="build-state-js" class="build-state">
+      <abbr class="build-state__label" title="Javascript build state">JS</abbr>
+      <span class="build-state__value" data-build-state="failing"></span>
+    </span>
+  </div>
+
+  <script src="./scripts/test.build.js"></script>
+</body>
+</html>

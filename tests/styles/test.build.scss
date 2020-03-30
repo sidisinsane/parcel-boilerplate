@@ -1,0 +1,12 @@
+// Set css build-state
+// to check if css/scss is build
+// for required browsers.
+#build-state-css {
+  [data-build-state] {
+    background-color: #74ae55;
+
+    &::after {
+      content: "passing";
+    }
+  }
+}
