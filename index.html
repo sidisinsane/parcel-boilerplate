@@ -51,11 +51,9 @@
       <div class="article__visual">
         <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject" class="article__figure">
           <picture>
-            <source srcset="/assets/images/articles/1080x608.jpg" media="(orientation: landscape) and (min-device-pixel-ratio: 1)">
-            <source srcset="/assets/images/articles/2160x1216.jpg" media="(orientation: landscape) and (min-device-pixel-ratio: 2)">
-            <source srcset="/assets/images/articles/1080x1350.jpg" media="(orientation: portrait) and (min-device-pixel-ratio: 1)">
-            <source srcset="/assets/images/articles/2160x2700.jpg" media="(orientation: portrait) and (min-device-pixel-ratio: 2)">
-            <img src="/assets/images/articles/1080x608.jpg" alt="">
+            <source media="(orientation: landscape)" srcset="/assets/images/articles/1080x608.jpg 1x, /assets/images/articles/2160x1216.jpg 2x">
+            <source media="(orientation: portrait)" srcset="/assets/images/articles/1080x1350.jpg 1x, /assets/images/articles/2160x2700.jpg 2x">
+            <img src="/assets/images/articles/1080x608.jpg" srcset="/assets/images/articles/1080x608.jpg 1x, /assets/images/articles/2160x1216.jpg 2x" alt="">
           </picture>
           <link itemprop="url" href="/assets/images/articles/2160x2700.jpg">
           <figcaption itemprop="caption">
