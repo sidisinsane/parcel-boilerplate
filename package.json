@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node_modules/.bin/parcel index.html",
     "build": "node_modules/.bin/parcel build index.html",
-    "prebuild": "rm -rf dist",
+    "build:favicon": "node ./tasks/favicon.js",
+    "prestart": "npm run build:favicon",
+    "prebuild": "rm -rf dist && npm run build:favicon",
     "generate:docs": "npm run generate:jsdoc",
     "generate:jsdoc": "node_modules/.bin/jsdoc -r --configure jsdoc.json --verbose",
     "test:build": "node_modules/.bin/parcel ./tests/index.html"
@@ -23,5 +25,9 @@
     "parcel-bundler": "^1.12.4",
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-preset-env": "^6.7.0"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "invert-color": "^2.0.0"
   }
 }
