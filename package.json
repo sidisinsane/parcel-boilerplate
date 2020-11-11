@@ -1,16 +1,27 @@
 {
   "name": "parcel-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple Boilerplate using Parcel JS.",
   "scripts": {
-    "start": "node_modules/.bin/parcel index.html",
-    "build": "node_modules/.bin/parcel build index.html",
+    "start": "node_modules/.bin/parcel src/*.html",
+    "build": "node_modules/.bin/parcel build src/*.html",
     "build:favicon": "node ./tasks/favicon.js",
-    "prestart": "npm run build:favicon",
-    "prebuild": "rm -rf dist && npm run build:favicon",
-    "generate:docs": "npm run generate:jsdoc",
+    "prestart": "npm run clean:cache && npm run clean:dist && npm run build:favicon",
+    "prebuild": "npm run clean:dist && npm run build:favicon",
+    "preinstall": "npx npm-force-resolutions",
+    "update:browserslist": "npx browserslist@latest --update-db",
+    "generate:docs": "npm run clean:docs && npm run generate:jsdoc",
     "generate:jsdoc": "node_modules/.bin/jsdoc -r --configure jsdoc.json --verbose",
-    "test:build": "node_modules/.bin/parcel ./tests/index.html"
+    "test:build": "node_modules/.bin/parcel tests/*.html",
+    "clean:cache": "rm -rf .cache/*",
+    "clean:dist": "rm -rf dist/*",
+    "clean:docs": "rm -rf docs/*",
+    "list:packages": "npm ls"
+  },
+  "resolutions": {
+    "browserslist": "4.14.5",
+    "caniuse-lite": "1.0.30001157",
+    "node-forge": "0.10.0"
   },
   "repository": {
     "type": "git",
@@ -22,7 +33,8 @@
     "@babel/core": "^7.9.0",
     "braintree-jsdoc-template": "^3.3.0",
     "jsdoc": "^3.6.3",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-beta.1",
+    "postcss": "^8.1.7",
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-preset-env": "^6.7.0"
   },

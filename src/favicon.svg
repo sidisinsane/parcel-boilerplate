@@ -1,0 +1,4 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" width="64px" height="64px">
+        <circle cx="32" cy="32" fill="#a39d3a" r="32"></circle>
+        <text fill="#000000" x="32" y="32" font-family="'Fira Mono', monospace" font-size="24" text-anchor="middle" alignment-baseline="central">mtr</text>
+    </svg>

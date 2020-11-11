@@ -81,7 +81,7 @@ const createFavicon = () => {
 const writeFavicon = () => {
   const favicon = createFavicon();
 
-  let writeStream = fs.createWriteStream(path.join(process.cwd(), 'favicon.svg'));
+  let writeStream = fs.createWriteStream(path.join(process.cwd(), 'src/favicon.svg'));
   writeStream.write(favicon);
   writeStream.on('finish', () => {
     console.log('wrote all data to file');
