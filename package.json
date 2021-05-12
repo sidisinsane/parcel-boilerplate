@@ -34,7 +34,7 @@
     "braintree-jsdoc-template": "^3.3.0",
     "jsdoc": "^3.6.3",
     "parcel": "^2.0.0-beta.1",
-    "postcss": "^8.1.7",
+    "postcss": "^8.2.10",
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-preset-env": "^6.7.0"
   },
